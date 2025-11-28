@@ -1,0 +1,190 @@
+/* ================================
+   INTRO SECTION
+================================ */
+
+.intro-hero {
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  padding: 80px 0;
+  box-sizing: border-box;
+}
+/* Background video */
+.intro-bg-video {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: contain !important; /* show full video */
+  background: #000;
+}
+
+/* Background image container */
+.intro-bg-image {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain !important; /* full image visible */
+  background-color: #000; /* keeps black bars if needed */
+}
+
+/* fallback empty bg */
+.intro-bg-empty {
+  position: absolute;
+  inset: 0;
+  background: #000;
+}
+
+
+.intro-overlay {
+  position: absolute;
+  inset: 0;
+  backdrop-filter: blur(2px);
+}
+
+.intro-inner {
+  position: relative;
+  z-index: 3;
+  display: flex;
+  gap: 40px;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.intro-left {
+  width: 260px;
+}
+
+.intro-card {
+  /* padding: 20px; */
+  border-radius: 14px;
+  /* background: rgba(255, 255, 255, 0.15); */
+  backdrop-filter: blur(6px);
+  /* border: 1px solid rgba(255, 255, 255, 0.28); */
+  text-align: center;
+}
+
+.profile-img {
+  width: 100%;
+  height: auto;            /* keep aspect ratio */
+  aspect-ratio: 1 / 1;     /* force perfect square */
+  object-fit: cover;
+  border-radius: 50%;
+  border: 3px solid white;
+  display: block;
+}
+
+
+.intro-card-name {
+  display: flex;
+  margin-top: 10px;
+  font-size: 1.6rem;
+  font-weight: 700;
+  color: white;
+}
+
+.intro-right {
+  flex: 1;
+  color: white;
+}
+
+.intro-name {
+  margin: 0;
+  font-size: 2.3rem;
+  font-weight: 800;
+}
+
+.intro-typing {
+  margin-top: 6px;
+  font-size: 1.2rem;
+  opacity: 0.95;
+}
+
+.typing-cursor {
+  animation: blink 1s infinite;
+}
+
+@keyframes blink {
+  50% { opacity: 0; }
+}
+
+.intro-desc {
+  margin-top: 18px;
+  font-size: 1rem;
+  line-height: 1.55;
+  max-width: 650px;
+}
+
+.intro-links {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+.link-icon {
+  padding: 8px 14px;
+  border-radius: 30px;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+  transition: 0.2s;
+}
+
+.link-icon:hover {
+  background: white;
+  color: black;
+}
+
+.intro-actions {
+  margin-top: 20px;
+  display: flex;
+  gap: 14px;
+}
+
+.intro-edit-btn {
+  position: absolute;
+  top: 18px;
+  left: 18px;
+  color: rgb(241, 11, 11);
+  /* background: rgba(0,0,0,0.4); */
+  border: none;
+  padding: 8px 10px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+.intro-edit-btn:hover {
+  background: rgba(255,255,255,0.35);
+}
+
+/* Small preview for profile image (admin edit) */
+.preview-sm {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  object-fit: cover;
+  display: block;
+  border: 2px solid #fff3;
+}
+
+/* Medium preview for background image/video */
+.preview-md {
+  width: 180px;
+  height: 120px;
+  border-radius: 10px;
+  object-fit: contain;
+  background: #111;
+  padding: 4px;
+  display: block;
+}
+
+.profile-img-wrapper {
+  width: 140px;     /* or % or responsive value */
+  aspect-ratio: 1/1;
+}
+
+

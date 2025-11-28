@@ -1,0 +1,43 @@
+/* ================================
+   DROPZONE
+================================ */
+
+.dropzone-wrapper {
+  margin-top: 14px;
+}
+
+.dropzone {
+  padding: 26px;
+  border: 2px dashed #ccc;
+  border-radius: 12px;
+  text-align: center;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.dropzone.hover {
+  border-color: #333;
+  background: #f0f0f0;
+}
+
+.preview-grid {
+  margin-top: 16px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  gap: 12px;
+}
+
+.file-preview {
+  width: 100%;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+}
+
+.fp-img,
+.fp-video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}

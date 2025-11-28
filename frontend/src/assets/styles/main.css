@@ -1,0 +1,72 @@
+/* ================================
+   GLOBAL & THEME
+================================ */
+
+body {
+  margin: 0;
+  font-family: Inter, sans-serif;
+  background: #0d0d0d;
+  color: white;
+}
+
+.container {
+  width: min(1200px, 92%);
+  margin: 0 auto;
+}
+
+.btn {
+  padding: 8px 18px;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background: #333;
+  color: white;
+  transition: 0.25s;
+}
+
+.btn:hover {
+  background: #555;
+}
+
+.btn.primary {
+  background: #1a73e8;
+}
+
+.btn.primary:hover {
+  background: #185fcc;
+}
+
+.btn.small {
+  padding: 5px 12px;
+}
+
+.btn.danger {
+  background: #d43c3c;
+}
+
+.btn.danger:hover {
+  background: #c31a1a;
+}
+
+.admin-toolbar {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  gap: 12px;
+  z-index: 50;
+}
+
+/* THEME COLORS */
+.theme-webdev {
+  --accent: #1a73e8;
+}
+
+.theme-sketch {
+  --accent: #222;
+  color: #000;
+}
+
+.theme-creative {
+  --accent: #e91e63;
+}

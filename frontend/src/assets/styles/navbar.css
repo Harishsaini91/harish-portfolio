@@ -1,0 +1,66 @@
+/* ================================
+   NAVBAR
+================================ */
+
+.navbar {
+  width: 100%;
+  padding: 14px 22px;
+  position: sticky;
+  top: 0;
+  z-index: 20;
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(255,255,255,0.2);
+}
+
+.navbar-list {
+  list-style: none;
+  display: flex;
+  gap: 28px;
+}
+
+.navbar-item {
+  position: relative;
+  padding: 6px 2px;
+  cursor: pointer;
+  font-size: 1.05rem;
+  opacity: 0.9;
+  transition: 0.25s;
+  color: white;
+}
+
+.navbar-item:hover {
+  opacity: 1;
+}
+
+.navbar-item.active {
+  font-weight: 700;
+  opacity: 1;
+}
+
+.active-underline {
+  height: 3px;
+  background: currentColor;
+  width: 100%;
+  border-radius: 10px;
+  margin-top: 4px;
+  animation: slideIn 0.3s ease forwards;
+}
+
+@keyframes slideIn {
+  from { width: 0; }
+  to { width: 100%; }
+}
+
+/* Theme-based colors */
+.theme-webdev .navbar {
+  background: rgba(0, 0, 0, 0.4);
+}
+
+.theme-sketch .navbar {
+  background: rgba(255, 255, 255, 0.4);
+  color: black;
+}
+
+.theme-creative .navbar {
+  background: rgba(15, 15, 25, 0.55);
+}

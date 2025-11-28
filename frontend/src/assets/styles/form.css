@@ -1,0 +1,70 @@
+/* ================================
+   FORMS
+================================ */
+
+.form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+}
+
+.form-grid label {
+  font-size: 0.9rem;
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.form-grid input,
+.form-grid textarea {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+.form-grid textarea {
+  resize: vertical;
+}
+
+.switch-row {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.link-row {
+  display: flex;
+  gap: 6px;
+  margin-bottom: 6px;
+}
+
+.form-error {
+  color: red;
+  margin: 8px 0;
+}
+
+.media-preview-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.preview-box {
+  width: 140px;           /* set preview width */
+  height: 120px;          /* set preview height */
+  border-radius: 8px;
+  overflow: hidden;
+  background: #111;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preview-box img,
+.preview-box video {
+  max-width: 100%;        /* keep inside box */
+  max-height: 100%;       /* keep full image visible */
+  object-fit: contain !important;  /* show full image */
+  border-radius: 6px;
+}

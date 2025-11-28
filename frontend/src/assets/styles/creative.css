@@ -1,0 +1,35 @@
+/* ================================
+   CREATIVE PROJECTS
+================================ */
+
+.creative-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.creative-list .project-card {
+  display: flex;
+  gap: 18px;
+  background: #0a0a14;
+  border: 1px solid rgba(255,255,255,0.2);
+}
+
+.creative-list .project-thumb {
+  width: 45%;
+  height: 260px;
+}
+
+.creative-list .project-info {
+  flex: 1;
+}
+
+
+.project-card img,
+.project-card video {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 10px;
+  display: block;
+}

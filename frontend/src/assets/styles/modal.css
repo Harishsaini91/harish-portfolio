@@ -1,0 +1,109 @@
+/* FULLSCREEN DARK BACKDROP */
+.modal-backdrop {
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+}
+
+/* MAIN MODAL BOX */
+.modal.media-viewer {
+  width: 90%;
+  max-width: 1100px;
+  height: 90vh;
+  background: #111;
+  border-radius: 12px;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+/* MEDIA AREA */
+.media-viewer-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.media-viewer-container img,
+.media-viewer-container video {
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+  border-radius: 10px;
+}
+
+/* LEFT/RIGHT ARROWS */
+.viewer-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 38px;
+  color: white;
+  padding: 10px 16px;
+  border-radius: 50%;
+  background: rgba(0,0,0,0.5);
+  cursor: pointer;
+  user-select: none;
+}
+
+.arrow-left { left: 15px; }
+.arrow-right { right: 15px; }
+
+.viewer-arrow:hover {
+  background: rgba(0,0,0,0.85);
+}
+
+/* CLOSE BUTTON */
+.media-close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  color: white;
+  font-size: 22px;
+  padding: 6px 12px;
+  background: rgba(255,255,255,0.15);
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+/* INFO PANEL */
+.viewer-info {
+  padding: 15px 20px;
+  color: white;
+  max-height: 25%;
+  overflow-y: auto;
+}
+
+.viewer-title {
+  margin: 0 0 10px;
+}
+
+.viewer-desc {
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+.viewer-links a {
+  margin-right: 20px;
+  color: #87cefa;
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.viewer-links a:hover {
+  text-decoration: underline;
+}
+
+/* ADMIN FOOTER */
+.viewer-footer {
+  padding: 12px 20px;
+  display: flex;
+  justify-content: flex-end;
+  gap: 12px;
+}
