@@ -25,12 +25,9 @@ app.use("/uploads", express.static(path.join(__dirname, "uploads")));
 // -------------------------------
 // DB CONNECTION
 // -------------------------------
-mongoose  
-  .connect(process.env.MONGO_URI, {
-    useNewUrlParser: true,
-    useUnifiedTopology: true,
-  })
-  .then(() => console.log("✅ MongoDB Connected"))
+mongoose
+  .connect(process.env.MONGO_URI)
+  .then(() => console.log("🔥 MongoDB Connected"))
   .catch((err) => console.error("❌ MongoDB Error:", err));
 
 // -------------------------------
@@ -42,7 +39,7 @@ const projectRoutes = require("./routes/projectRoutes");
 const uploadRoutes = require("./routes/uploadRoutes");
 
 // -------------------------------
-// ROUTES USE
+// ROUTES USE 
 // -------------------------------
 app.use("/api/auth", authRoutes);
 app.use("/api/intro", introRoutes);
