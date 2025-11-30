@@ -3,7 +3,9 @@
 // - supports json bodies via { jsonBody: {...} }
 // - throws Error on non-OK responses with useful message
 
-const API_BASE = process.env.REACT_APP_API || "http://localhost:5000/api";
+// const API_BASE = process.env.REACT_APP_API || "http://localhost:5000/api";
+const API_BASE = process.env.REACT_APP_API_URL || "http://localhost:5000/api";
+
 
 async function request(path, opts = {}) {
   const url = `${API_BASE}${path}`;
