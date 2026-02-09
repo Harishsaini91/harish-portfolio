@@ -10,7 +10,7 @@ exports.getIntro = async (req, res) => {
       intro = await Intro.create({
         name: "Your Name",
         bioLines: ["Welcome to my portfolio"],
-        description: "This is my intro section.",
+        description: "I’m a motivated software developer with practical experience in full-stack web development. I’m looking for an internship or junior role where I can apply my skills, learn from real projects, and add value to the team.",
       });
     }
 

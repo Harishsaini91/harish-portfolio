@@ -201,7 +201,7 @@ useEffect(() => {
 
         {loading && <div className="loading-overlay">Loading…</div>}
       </div>
-    </ThemeProvider>
+    </ThemeProvider> 
   );
 }
  
